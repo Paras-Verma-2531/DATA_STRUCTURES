@@ -2,6 +2,7 @@
 using namespace std;
 class indexoverloading
 {
+
     int a[100];
 
 public:
@@ -20,18 +21,17 @@ public:
     {
         return a[k];
     }
-    
-    
 };
 int main()
 {
-   
+
     indexoverloading ob1;
     ob1.init();
 
     // int k=ob1.get(2);
-    int k = ob1[1];
-    cout<< k << endl;
+    // int k = ob1[1];
+    int k = ob1.a[1];
+    cout << k << endl;
     return 0;
 }
 // a[2]
